@@ -1,0 +1,243 @@
+/* this is my custom CSS */
+/**********************************
+GENERAL
+***********************************/
+.test{
+	border: 4px dashed goldenrod;
+}
+.noBtn.ui-button{
+	border: 0;
+	border-style: none;
+	background-image: none;
+}
+html,body{
+	font-family:'Open Sans',sans-serif;
+	font-weight: 400;
+	height:100%;
+	width:100%;
+	font-size:1em;
+	margin:0;
+	padding:0;
+	border:0;
+	background-color: #e2e2e2;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+div{
+	margin:0;
+	padding:0;
+
+}
+p{
+	margin:0;
+	padding:0;
+	border:0;
+}
+a {
+	text-decoration:none;
+}
+a:hover{
+	text-decoration: none;
+
+}
+/**********************************
+MAIN CONTENT
+***********************************/
+.wrapper{
+	width: 85%;
+	margin: 0 auto;
+	padding: 0 5%;
+	overflow: auto;
+	clear:both;
+	display: table;
+	height: 75%;
+}
+/** PROFILE **/
+div.row.top{
+	width: 100%;
+	height: 40%;
+	display: block;
+	border:1px solid #456456;
+	margin-top: 1%;
+	margin-bottom: 1%;
+
+}
+#yy{
+	float:left;
+	display: inline;
+}
+.profile-photo {
+	display: inline;
+	float: left;
+	max-width: 150px;
+	margin: 20px;
+	border-radius: 80%;
+}
+.tableP{
+	display: inline;
+	float: left;
+	margin: 15px 20px 10px 20px;
+	padding: 20px;
+	font-size: 0.92em;
+}
+/*** TABS CONTAINERS***/
+/** General Styles for tables and content boxes
+	borrowed from JQuery UI***/
+label, input { display:block; }
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }
+h1 { font-size: 1.1em; margin: .6em 0; }
+div#users-contain { width: 950px; margin: 20px 0; }
+div#users-contain table { margin: 2em 0; border-collapse: collapse; width: 100%; }
+div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+.ui-widget .ui-widget-content {
+	font-size: 1em;
+}
+
+
+/** End borrowed stuff**/
+div.row.bottom{
+	width:100%;
+	height: 55%;
+	display: block;
+	border:1px solid #456456;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	overflow-y: auto;
+}
+.ui-widget .ui-widget {
+	font-size: .6em;
+}
+/*** boxes with black headers**/
+
+/*div.ui-widget-content.ui-corner-all:nth-of-type(odd){
+	float: left;
+}*/
+/** some custom code to handle the black information blocks**/
+div#tabs-2.ui-tabs-panel.ui-widget-content.ui-corner-bottom {
+	overflow: auto;
+
+}
+div#tabs-3.ui-tabs-panel.ui-widget-content.ui-corner-bottom{
+	overflow: auto;
+}
+div#tabs-4.ui-tabs-panel.ui-widget-content.ui-corner-bottom{
+	overflow: auto;
+}
+/*div#tabs-3.ui-tabs-panel.ui-widget-content.ui-corner-bottom div.box {
+	display: table;
+}*/
+div#tabs-2.ui-tabs-panel.ui-widget-content.ui-corner-bottom div.box div.ui-widget-content.ui-corner-all:nth-of-type(odd){
+	float: left;
+	width: 42%;
+	margin: 2%;
+}
+div#tabs-3.ui-tabs-panel.ui-widget-content.ui-corner-bottom div.box div.ui-widget-content.ui-corner-all:nth-of-type(odd){
+	float: left;
+	width: 42%;
+	margin: 2%;
+	display: block;
+	min-height: 200px;
+
+}
+div#tabs-3.ui-tabs-panel.ui-widget-content.ui-corner-bottom div.box div.ui-widget-content.ui-corner-all:nth-of-type(even){
+	clear: both;
+	width: 42%;
+	display: block;
+	min-height: 200px;
+
+}
+div#tabs-4.ui-tabs-panel.ui-widget-content.ui-corner-bottom div.box div.ui-widget-content.ui-corner-all:nth-of-type(odd){
+	float: left;
+	width: 42%;
+	margin: 2%;
+	display: block;
+	min-height: 200px;
+
+}
+div#tabs-4.ui-tabs-panel.ui-widget-content.ui-corner-bottom div.box div.ui-widget-content.ui-corner-all:nth-of-type(even){
+	clear: both;
+	width: 42%;
+	display: block;
+	min-height: 200px;
+
+}
+/*div.ui-widget-content.ui-corner-bottom{
+	width: 50%;
+}*/
+/** table buttons**/
+td.mode .ui-widget {
+	font-size: .9em;
+}
+/*** make information labels bold**/
+#labelL{
+	font-weight: bold;
+}
+/** make jquery ui tables un tiny**/
+.tableT{
+	font-size: 1.6em;
+}
+/**********************************
+HEADING
+***********************************/
+div.page-header {
+	border-bottom: 3px solid #262626;
+	background-color: #ebebeb;
+	box-shadow: 0 10px 5px #888888;
+	margin-bottom: 1%;
+}
+.page-header{
+	overflow: auto;
+	clear:both;
+	display:table;
+	width:100%;
+	height :15% ;
+}
+.headerTop{
+	background-color: #262626;
+	height: 20%;
+	display: table-row;
+}
+.headerText{
+	float:left;
+	color: #262626;
+}
+.logo{
+	float:left;
+}
+.logo img{
+	display: block;
+	max-height: 100px;
+	margin:0 auto 5px auto;
+	float: left;
+}
+.logo h1{
+
+	margin: 30px 1px 0px 1px;
+	padding-right: 50px;
+	font-size: 1.3em;
+	font-weight: normal;
+	line-height: 0.3em;
+
+}
+.logo h2{
+	font-size: 0.8em;
+	margin-right: 12px;
+}
+/**********************************
+FOOTER
+***********************************/
+.footer{
+	color:#ebebeb;
+	width: 100%;
+	height: 3.5%;
+	background-color: #262626;
+	font-size: 0.75em;
+	text-align:center;
+}

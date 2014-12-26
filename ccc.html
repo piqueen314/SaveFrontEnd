@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!---Fonts------>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:700|Open+Sans:400italic,400' rel='stylesheet' type='text/css'>
+
+    <!-- Jquery UI CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.css" >
+    <link rel="stylesheet" href="css/jquery-ui.structure.css" >
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Our Custom css -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- javascript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/respond.js"></script>
+
+    <!---CSS -->
+    <style>
+
+        label, input { display:block; }
+        input.text { margin-bottom:12px; width:95%; padding: .4em; }
+        fieldset { padding:0; border:0; margin-top:25px; }
+        h1 { font-size: 1.1em; margin: .6em 0; }
+        div#users-contain { width: 950px; margin: 20px 0; }
+        div#users-contain table { margin: 2em 0; border-collapse: collapse; width: 100%; }
+        div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+        .ui-dialog .ui-state-error { padding: .3em; }
+        .validateTips { border: 1px solid transparent; padding: 0.3em; }
+        .ui-widget .ui-widget-content {
+            font-size: 1em;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Contact</a></li>
+        <li><a href="#tabs-2">Demographic</a></li>
+        <li><a href="#tabs-3">Current Status</a></li>
+        <li><a href="#tabs-4">Teacher/Grades</a></li>
+        <li><a href="#tabs-5">Coach/Mentor</a></li>
+        <li><a href="#tabs-6">SAVE Attendance</a></li>
+        <li><a href="#tabs-7">Extra Curricular</a></li>
+        <li><a href="#tabs-8">Future</a></li>
+        <li><a href="#tabs-9">Notes</a></li>
+    </ul>
+    <div id="users-contain" class="ui-widget">
+        <div id="tabs-1">
+            <table cellpadding="10">
+                <tr class="ui-widget-header ">
+                    <td id="name"> Andy Thompson</td>
+                    <td></td>
+                    <td id="id"> ID 87234</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="address"> 2230 S 24th St, Omaha, NE 68131</td>
+                    <td id="studentphone">Primary: 402-334-0909</td>
+                    <td id="studentemail">andyto@gmail</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="parent"> Parent: James Thompson</td>
+                    <td id="parentphone"> 402-333-9999</td>
+                    <td id="parentemail"> jthompson@gmail.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="parent"> Parent: Elizabeth Smiley</td>
+                    <td id="parentphone"> 402-667-9988</td>
+                    <td id="parentemail"> smiley@gmail.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="parent"> Parent: Jon Smiley</td>
+                    <td id="parentphone"> 402-233-0654</td>
+                    <td id="parentemail"> jsmiley@gmail.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div>  <!--- end div tab 1-->
+        <div id="tabs-2">
+            <table cellpadding="10">
+                <tr>
+                    <td id="age"> 12 yrs</td>
+                    <td id="school">Current School: Harrison</td>
+                    <td id="householdsize"> Household Size: 5</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="grade"> 6th Grade</td>
+                    <td id="exercise"> Free/Reduced Lunch: Y</td>
+                    <td id="previoussports"> Internet Access Home: N</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="ethnicity"> African American</td>
+                    <td id="internet"> Played Sports Before: N</td>
+                    <td id="reducedlunch"> # of Vehicles: 1</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="sex"> Male</td>
+                    <td id="vehicles"> X's Exercise/Week: 3</td>
+                    <td></td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div><!--- end tab2--->
+        <div id="tabs-3">
+            <table cellpadding="10">
+                <tr>
+                    <td id="startinggpa"> Starting G.P.A. 2.95</td>
+                    <td id="yearentered">Year Entered SAVE: 2013</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="currentgpa"> Current G.P.A. 3.15</td>
+                    <td id="participant"> Current Participant: Y</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="schoolattend"> Attendance/Days Missed/Semester: 4</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div><!--- end tab3--->
+        <div id="tabs-4">
+            <table cellpadding="10">
+                <tr>
+                    <td id="teachersub"> English</td>
+                    <td id="teacher">Mrs. Jennings</td>
+                    <td id="grade">B</td>
+                    <td id="teacherph">402-234-7896</td>
+                    <td id="teacheremail">jennenglish@gmail.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="teachersub"> Science</td>
+                    <td id="teacher">Mr. Kite</td>
+                    <td id="grade">  C</td>
+                    <td id="teacherph">402-599-0878</td>
+                    <td id="teacheremail">kitescience@aol.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="teachersub"> Social Studies</td>
+                    <td id="teacher">Ms. Glass</td>
+                    <td id="grade">  A</td>
+                    <td id="teacherph">712-322-0987</td>
+                    <td id="teacheremail">glassteacher@hotmail.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="teachersub"> Math</td>
+                    <td id="teacher">Mr. West</td>
+                    <td id="grade">  B</td>
+                    <td id="teacherph">402-355-9090</td>
+                    <td id="teacheremail">westmath@gmail.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="teachersub"> Music</td>
+                    <td id="teacher">Mrs. Jam</td>
+                    <td id="grade">  C</td>
+                    <td id="teacherph">677-899-7656</td>
+                    <td id="teacheremail">jamminthemusic@aol.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="teachersub"> Spanish</td>
+                    <td id="teacher">Mr. Anderson</td>
+                    <td id="grade">  A</td>
+                    <td id="teacherph">556-890-4545</td>
+                    <td id="teacheremail">spanishanderson@cox.net</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="teachersub"> P. E. </td>
+                    <td id="teacher"> Mrs. Larsen</td>
+                    <td id="grade">  C</td>
+                    <td id="teacherph">402-333-0000</td>
+                    <td id="teacheremail">physicallarsen@yahoo.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="teachersub"> Art</td>
+                    <td id="teacher">Miss Munson</td>
+                    <td id="grade">  C</td>
+                    <td id="teacherph">4332-898-7654</td>
+                    <td id="teacheremail">artistmunson@hotmail.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div><!--- end tab4--->
+        <div id="tabs-5">
+            <table cellpadding="10">
+                <tr>
+                    <td id="coachormentor"> Coach</td>
+                    <td id="mentor/coach"> Stan Dratch</td>
+                    <td id="phone"> 444-786-2345</td>
+                    <td id="email"> dratch@gmail.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="coachormentor"> Mentor</td>
+                    <td id="mentor/coach"> Jesse Minks</td>
+                    <td id="phone"> 555-898-1234</td>
+                    <td id="email"> minks@hotmail.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="coachormentor"> Mentor</td>
+                    <td id="mentor/coach"> Loretta Carroll</td>
+                    <td id="phone"> 777-093-2456</td>
+                    <td id="email"> carrollloretta@yahoo.com</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="coachormentor"> Coach</td>
+                    <td id="mentor/coach"> Mike Tough</td>
+                    <td id="phone"> 654-902-3412</td>
+                    <td id="email"> toughstuff@cox.net</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div><!--- end tab5--->
+        <div id="tabs-6">
+            <table cellpadding="10">
+                <tr>
+                    <td id="dateofevent"> 11/26/2014</td>
+                    <td id="nameofevent"> Tutoring</td>
+                    <td id="attendyesorno"> Y</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="dateofevent"> 01/30/2015</td>
+                    <td id="nameofevent"> Tutoring</td>
+                    <td id="attendyesorno"> N</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="dateofevent"> 09-10-2014</td>
+                    <td id="nameofevent"> Tutoring</td>
+                    <td id="attendyesorno"> Y</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="dateofevent"> 02-11-2014</td>
+                    <td id="nameofevent"> Tutoring</td>
+                    <td id="attendyesorno"> Y</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div><!--- end tab6--->
+        <div id="tabs-7">
+            <table cellpadding="10">
+                <tr>
+                    <td id="communityprogram"> Boys and Girls Club</td>
+                    <td id="yearjoined"> 2012</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="communityprogram"> Harrison School Jazz Band</td>
+                    <td id="yearjoined"> 2013</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="communityprogram"> St. Roberts Youth Group</td>
+                    <td id="teams"> 2014</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div><!--- end tab7--->
+        <div id="tabs-8">
+            <table cellpadding="10">
+                <tr>
+                    <td id="highschool"> High School: Central HS</td>
+                    <td id="highschoolsuccess"> High School Success: Graduated Honors</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="antgraddate">Anticipated Graduation Date: 2018</td>
+                    <td id="firstgen"> First Generation College: Y</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="standardizedtest">Standardized Test: ACT 30</td>
+                    <td id="posths"> Post HS Plans: Metro Community College</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="freshmansuccess"> Freshman Success: Silver Honor Roll</td>
+                    <td id="postcollege"> Post College: IT Position Union Pacific</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div><!--- end tab8--->
+        <div id="tabs-9" style="font-size: 25px">
+            <table cellpadding="10">
+                <tr>
+                    <td id="dateofnote"> 08-12-2014</td>
+                    <td id="notes"> Wonderful job yesterday!</td>
+                    <td id="notesfrom">Kevin Melcher</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="dateofnote"> 09-07-2014</td>
+                    <td id="notes"> Don't forget your math assignment!</td>
+                    <td id="notesfrom">Mrs. Glass</td>
+                    <td>
+                        <button>Edit</button>
+                    </td>
+                    <td>
+                        <button>Delete</button>
+                    </td>
+
+                    <td id="dateofnote"> 10-15-2014</td>
+                    <td id="notes"> You still need to turn in your science lab notes.</td>
+                    <td id="notesfrom">Mr. Mann</td>
+                    <td>
+                        <button>Edit</button>
+                    </td>
+                    <td>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="dateofnote"> 10-30-2014</td>
+                    <td id="notes"> Nice victory for the tigers.</td>
+                    <td id="notesfrom">Monica Bosiljevac</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td id="dateofnote"> 11-08-2014</td>
+                    <td id="notes"> I was sick yesterday</td>
+                    <td id="notesfrom">Andy Thompson</td>
+                    <td><button>Edit</button></td>
+                    <td><button>Delete</button></td>
+                </tr>
+            </table>
+        </div><!--- end tab9--->
+        </div><!--- end content wrap--->
+</div>
+</body>
+</html>
